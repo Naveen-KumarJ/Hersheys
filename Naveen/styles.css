@@ -39,18 +39,41 @@ nav{
 }
 .nav-menu>ul>li{
     padding: 27px;
+    position: relative;
 }
 .nav-menu>ul>li>a{
     color: var(--primary-color);
     font-size: 1rem;
     font-weight: 400;
     display: flex;
-    flex-wrap: nowrap;
+    align-items: center;
+    transition: all 0.2s;
+}
+.nav-menu>ul>li>a::before{
+    content: "";
+    background: url(./assets/Hersheys-icon.svg) no-repeat center;
+    background-size: contain;
+    width: 14px;
+    height: 14px;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%,-50%); 
+    margin-right: 2px;
+    display: none; 
+}
+.nav-menu>ul>li>a:hover::before{
+    display: inline-block;
 }
 .nav-menu>ul>li>a:hover{
     font-weight: 600;
 }
+
+.nav-menu>ul>li>a:hover i{
+    transform: rotate(180deg);
+}
 .nav-menu>ul>li>a>i{
+    position: relative;
+    top: 1px;
     font-size: 24px;
     font-weight: 500;
 }
@@ -79,4 +102,59 @@ nav{
     border-radius: 0 20px 20px 0;
     background-color: #F5F5F5;
     color: #083B97;
+    cursor: pointer;
+}
+
+
+
+
+.hover-tab{
+    color: var(--primary-color);
+    width: 530px;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 7.52px 0.48px;
+    z-index: 1000;
+    background-color: white;
+}
+.hover-tab>h5{
+    display: inline-block;
+    text-decoration: underline;
+    text-decoration-thickness: 1.5px;
+}
+.hover-tab>.brand-items{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+    margin-top: 20px;
+}
+.hover-tab>.brand-items>.item{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    overflow: hidden;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 0px 7.52px 0.48px;
+    
+}
+.hover-tab>.brand-items>.item>img{
+    width: 42px;
+    height: auto;
+    object-fit: cover;
+    transition: all 0.2s ease-in-out;
+}
+.hover-tab>.brand-items>.item>h5{
+    padding: 10px 0;
+}
+.hover-tab>.brand-items>.item:hover img{
+    transform: scale(1.2);
+}
+
+.our-brand-hover-tab{
+    position: absolute;
+    top: 90%;
+    left: 30px;
+    display: none;
+}
+.nav-menu>ul>li>.our-brands:hover .our-brand-hover-tab, .our-brand-list:hover .our-brand-hover-tab{
+    display: block;
 }
