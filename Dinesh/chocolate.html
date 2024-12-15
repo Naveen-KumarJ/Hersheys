@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Indulgent Chocolates by HERSHEY'S | HERSHEYS'S India</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+</head>
+<body>
+    <section class="banner">
+        <div class="heading">Make your own memories</div>
+    </section>
+    <section class="gallery">
+        <div><img src="./assets/chocolates-rtb-image-01.jpeg" alt=""></div>
+        <div><img src="./assets/chocolates-rtb-image-02.jpeg" alt=""></div>
+        <div><img src="./assets/chocolates-rtb-image-03.jpeg" alt=""></div>
+    </section>
+    <section class="celebrate-text">
+        <h2>Celebrate Togetherness with HERSHEY’S range of Indulgent Chocolates.</h2>
+        <p>Indulge in mouth-watering chocolates from HERSHEY'S. Try our KISSES, EXOTIC DARK and BARS today.</p>
+    </section>
+    <section class="call-out-card">
+        <div class="card-content">
+            <div class="card-heading">HERSHEY’S KISSES</div> 
+            <div class="card-subHeading">
+                Say it with a kiss! Enjoy the perfect bite-sized 
+                chocolate moment in delectable flavors.
+            </div>
+            <div class="card-button">
+                <button>Know More</button>
+            </div>
+        </div>
+        <div class="card-img">
+            <img src="./assets/Chocolates-widget_kisses_display-removebg.png" alt="hershey kisses">
+        </div>
+    </section>
+    <section class="call-out-card card2">
+        <div class="card-content">
+            <div class="card-heading">HERSHEY’S EXOTIC DARK</div> 
+            <div class="card-subHeading">
+                Exotic combinations. Extraordinarily delicious. Crafted with an intriguing combination of smooth, dark cocoa rich chocolate and exotic fruit and almond flavors.
+            </div>
+            <div class="card-button">
+                <button>Know More</button>
+            </div>
+        </div>
+        <div class="card-img">
+            <img src="./assets/Chocolates-widget_exotic-dark_display.png" alt="hershey kisses">
+        </div>
+    </section>
+    <section class="call-out-card card3">
+        <div class="card-content">
+            <div class="card-heading">HERSHEY’S BARS</div> 
+            <div class="card-subHeading">
+                Relish the delicious taste of HERSHEY’S as you bite into our range of creamy and crunchy chocolate bars..
+            </div>
+            <div class="card-button">
+                <button>Know More</button>
+            </div>
+        </div>
+        <div class="card-img">
+            <img src="./assets/Chocolates-widget_bars_display.png" alt="hershey kisses">
+        </div>
+    </section>
+    <section class="call-out-card card2">
+        <div class="card-content">
+            <div class="card-heading">Gift Premium Chocolates <br>with HERSHEY’S</div> 
+            <div class="card-subHeading">
+                Celebrate special moments with your loved ones, and experience the exquisiteness of rich chocolate in assorted flavors with HERSHEY’S gift packs..
+            </div>
+            <div class="card-button">
+                <button>Know More</button>
+            </div>
+        </div>
+        <div class="card-img">
+            <img src="./assets/Chocolates-widget_gifting_display.png" alt="hershey kisses">
+        </div>
+    </section>
+
+    <script>
+        const buttons = document.querySelectorAll('.card-button button');
+        const images = document.querySelectorAll('.card-img img');
+        buttons.forEach((button, index) => {
+            const image = images[index];
+
+            button.addEventListener('mouseenter', () => {
+                image.style.transform = 'scale(1.1)';
+            });
+
+            button.addEventListener('mouseleave', () => {
+                image.style.transform = 'scale(1)';
+            });
+        });
+    </script>
+</body>
+</html>
