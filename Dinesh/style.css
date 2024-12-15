@@ -122,6 +122,10 @@
   color: #3f000b;
 }
 
+.recipe-banner img {
+  max-width: 100%;
+}
+
 .recipe-gallery {
   width: 60%;
   margin: auto;
@@ -134,6 +138,10 @@
   overflow: hidden;
 }
 
+.recipe-grid div {
+  overflow: hidden;
+}
+
 .recipe-grid img {
   width: 100%;
   height: auto;
@@ -141,6 +149,24 @@
   transition: transform 0.3s ease;
 }
 
-.recipe-grid img:hover {
+/* .recipe-grid img:hover {
   transform: scale(1.2);
+} */
+
+.recipe-category {
+  text-decoration: underline;
+  color: #007bbd;
+  transition: color 0.3s ease;
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.recipe-wrapper:hover .recipe-pic img {
+  transform: scale(1.2); /* Scale the image */
+}
+
+.recipe-wrapper:hover .recipe-category {
+  color: brown; /* Change text color to brown */
+  text-decoration: none; /* Remove underline */
 }
