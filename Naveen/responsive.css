@@ -1,0 +1,75 @@
+/* Extra Large Devices */
+@media only screen and (min-width:1200px){
+    nav>.toggle-menu{
+        display: none;
+    }
+}
+/* Laptop */
+@media only screen and (min-width: 991px) and (max-width: 1200px)  {
+    nav>.toggle-menu{
+        display: none;
+    }
+    .hero>.title{
+        font-size: 2.7rem;
+    }
+}
+/* Tablet */
+@media only screen and (max-width:991px) {
+    header{
+        height: 60px;
+    }
+    nav{
+        /* align-items: center; */
+        padding: 0 8% 0 2%;
+    }
+    nav>.toggle-menu{
+        font-size: 30px;
+        font-weight: bold;
+        color: #023494;
+    }
+    .nav-left-part>.nav-menu{
+        display: none;
+    }
+    .nav-search-part{
+        width: 47px;
+    }
+    .nav-search-part>input{
+        display: none;
+    }
+    .nav-search-part>button{
+        background-color: transparent;
+    }
+    main{
+        margin-top: 60px;
+    }
+    .hero>.title{
+        font-size: 32px;
+        margin-bottom: 26px;
+    }
+    .hero>.hero-product-tab{
+        display: none;
+    }
+
+    .find-inspiration-tab{
+        display: flex;
+    }
+    
+}
+
+/* Large Mobile Phones */
+@media only screen and (max-width:769px){
+    body{
+        background-color: yellow;
+    }
+    .hero{
+        height: 50vh;
+    }
+
+}
+
+/* Small Devices (Mobile) */
+@media only screen and (max-width:577px){
+    body{
+        background-color: green;
+    }
+}

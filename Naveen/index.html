@@ -6,6 +6,7 @@
     <title>Welcome To The World Of HERSHEY'S India</title>
     <link rel="icon" href="./assets/Hersheys-icon.svg" type="image/svg" sizes="32x32">
     <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="./responsive.css">
 
     <!-- Boxicons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
@@ -17,19 +18,26 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
 </head>
 <body>
     <!-- Header -->
     <header>
         <nav>
+            <!-- toggle-Hamburger-icon -->
+            <div class="toggle-menu"><i class="ri-menu-2-line"></i></div>
+            <!-- Nav left part (Logo ,Nav menu) -->
             <div class="nav-left-part">
+                <!-- logo -->
                 <div class="logo">
                     <img src="./assets/hersheys-logo-color.webp" alt="Hershey's logo">
                 </div>
+                <!-- nav menu -->
                 <div class="nav-menu">
                     <ul>
                         <li class="our-brand-list">
                             <a href="#" class="our-brands">Our Brands <i class="ri-arrow-down-s-line"></i>
+                                <!-- hover tab to show items while hovering -->
                                 <div class="hover-tab our-brand-hover-tab">
                                     <h5>Explore Our Brands</h5>
                                     <i class="ri-arrow-right-s-line"></i>
@@ -85,11 +93,70 @@
                     </ul>
                 </div>
             </div>
+            <!-- Nav Search part (input, search btn) -->
             <div class="nav-search-part">
+                <!-- input -->
                 <input type="text" placeholder="Search favourites products and recipes"/>
+                <!-- search btn -->
                 <button><i class="ri-search-line"></i></button>
             </div>
         </nav>
     </header>
+
+    <!-- Main -->
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <!-- <div class="hero-banner">
+                <img src="./assets/Hersheyland-Homepage-Banner.jpeg" alt="Home page banner">
+            </div> -->
+            <div class="title">
+                Welcome to the world of HERSHEY'S.
+            </div>
+            <div class="hero-product-tab">
+                <div class="each-product-tab">
+                    <img src="./assets/01-Widget-Chocolates.jpg" alt="">
+                    <span><h4>HERSHEY'S Chocolates</h4></span>
+                </div>
+                <div class="each-product-tab">
+                    <img src="./assets/01-Widget-Chocolates.jpg" alt="">
+                    <span><h4>HERSHEY'S Snacking Delights</h4></span>
+                </div>
+                <div class="each-product-tab">
+                    <img src="./assets/01-Widget-Chocolates.jpg" alt="">
+                    <span><h4>HERSHEY'S Festive Celebration</h4></span>
+                </div>
+                <div class="each-product-tab">
+                    <img src="./assets/01-Widget-Chocolates.jpg" alt="">
+                    <span><h4>SOFIT Sofab</h4></span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Find Inspiration sticky tab -->
+        <div class="find-inspiration-tab">
+            <span><h4>Find Inspiration</h4><i class="ri-arrow-down-s-line"></i></span>
+        </div>
+
+        <!--  -->
+        <section class="explore-section">
+            <div class="banner">
+                <img src="./assets/homepage-about us.jpg" alt="">
+            </div>
+            <div class="context">
+                <h1>Something for Everyone</h1>
+                <p>HERSHEY was founded on the
+                    simple idea that everyone should be
+                    able to enjoy life's goodness.
+                    By foraying into the lives of the Indian
+                    consumer, we are striving to build on
+                    that foundation every day.</p>
+                <button>EXPLORE</button>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+     <footer></footer>
 </body>
 </html>

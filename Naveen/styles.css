@@ -10,20 +10,35 @@ body{
     width: 100vw;
     font-size: 17px;
     font-weight: 500;
+    overflow-x: hidden;
 }
 :root{
     --primary-color: #3f000b;
     --section-title-size: 36px;
+    
 }
 
-nav{
+                                                        /* Header Part CSS */
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: white;
+    width: 100vw;
     height: 80px;
+    z-index: 1000;
+}
+/* =Nav part CSS=*/
+nav{
+    width: 100%;
+    height: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 0 2%;
     box-shadow: rgba(0, 0, 0, 0.3) 0px 0px 7.52px 0.48px;
 }
+    /* ==Nav left part CSS== */
 .nav-left-part{
     display: flex;
     align-items: center;
@@ -48,6 +63,7 @@ nav{
     display: flex;
     align-items: center;
     transition: all 0.2s;
+    white-space: nowrap;
 }
 .nav-menu>ul>li>a::before{
     content: "";
@@ -77,14 +93,16 @@ nav{
     font-size: 24px;
     font-weight: 500;
 }
+    /* ==nav right part CSS== */
 .nav-search-part{
+    width: 32%;
     height: 44px;
     display: flex;
     align-items: center;
 }
 
 .nav-search-part>input{
-    width: 390px;
+    width: 100%;
     height: 100%;
     padding: 0 10px 0 20px;
     border: none;
@@ -105,9 +123,7 @@ nav{
     cursor: pointer;
 }
 
-
-
-
+/* ==Nav left part CSS== |This is for Nav left part nav menu CSS -> Hover Tab effect| */
 .hover-tab{
     color: var(--primary-color);
     width: 530px;
@@ -158,3 +174,144 @@ nav{
 .nav-menu>ul>li>.our-brands:hover .our-brand-hover-tab, .our-brand-list:hover .our-brand-hover-tab{
     display: block;
 }
+
+
+
+
+                                                        /* Main Part CSS */
+main{
+    width: 100%;
+    margin-top: 80px;
+    background-color: green;
+}
+
+.hero{
+    width: 100%;
+    height: 100vh;
+    background-image: url(./assets/Hersheyland-Homepage-Banner.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    position: relative;
+}
+
+/* .hero>.hero-banner>img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+} */
+ .hero>.title{
+    width: 80%;
+    font-size: 3rem;
+    font-weight: 900;
+    color: white;
+    text-align: center;
+    margin-bottom: 80px;
+    font-family: "Playfair Display";
+ }
+
+.hero-product-tab{
+    position: absolute;
+    bottom: -5%;
+    display: flex;
+    justify-content: center;
+    height: 82px;
+    z-index: 2;
+}
+.each-product-tab{
+    display: flex;
+    align-items: center;
+    background-color: #003594;
+    gap: 20px;
+    border-right:3px solid #4068af;
+    transition: all 0.6s ease-in-out;
+}
+.each-product-tab>img{
+    background-color: green;
+    height: 100%;
+    max-width: 83px;
+    object-fit: cover;
+    opacity: 0.7;
+    transition: all 0.6s ease-in-out;
+}
+.each-product-tab:hover img{
+    opacity: 1;
+}
+.each-product-tab:hover{
+    background-color: #4068af;
+}
+.each-product-tab:hover span{
+    text-decoration: none;
+}
+.each-product-tab>span{
+    width: 180px;
+    color: white;
+    text-decoration: underline;
+    transition: all 0.6s ease-in-out;
+}
+.each-product-tab>span>h4{
+    width: 70%;
+}
+
+.find-inspiration-tab{
+    height: 50px;
+    width: 100%;
+    background-color: #4068AF;
+    color: white;
+    justify-content: center;
+    align-items: center;
+
+    position: sticky;
+    bottom: 0;
+    display: none;
+}
+.find-inspiration-tab>span{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.find-inspiration-tab>span>i{
+    font-size: 36px;
+}
+
+.explore-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 80px;
+    background-color: #3f000b;
+    padding: 90px 0px;
+}
+.explore-section>.context{
+    background-color: red;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 36px;
+    width: 30%;
+    height: 70vh;
+    position: relative;
+    right: 35px;
+    z-index: 2;
+    padding: 0px 25px;
+    text-align: center;
+    color: white;
+}
+.explore-section>.context>h1{
+    font-family: "Playfair Display"; 
+    font-weight: 900;
+    font-size: 2rem;
+}
+.explore-section>.banner{
+    background-color: fuchsia;
+    width: 60%;
+}
+.explore-section>.banner>img{
+    width: 100%;
+}
+
+/* font-family: "Playfair Display"; */
