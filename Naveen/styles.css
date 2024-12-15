@@ -286,7 +286,7 @@ main{
     padding: 90px 0px;
 }
 .explore-section>.context{
-    background-color: red;
+    background-color: rgb(176,0,96);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -296,7 +296,7 @@ main{
     height: 70vh;
     position: relative;
     right: 35px;
-    z-index: 2;
+    z-index: 10;
     padding: 0px 25px;
     text-align: center;
     color: white;
@@ -306,8 +306,17 @@ main{
     font-weight: 900;
     font-size: 2rem;
 }
+.explore-section>.context>button{
+    background-color: #007BBD;
+    width: 80%;
+    height: 44px;
+    border: none;
+    border-radius: 22px;
+    font-weight: bold;
+    color: white;
+    font-size: 18px;
+}
 .explore-section>.banner{
-    background-color: fuchsia;
     width: 60%;
 }
 .explore-section>.banner>img{
