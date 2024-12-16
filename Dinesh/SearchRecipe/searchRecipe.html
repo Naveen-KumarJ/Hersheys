@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Recipe</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="searchRecipe.css">
+    <link rel="stylesheet" href="searchRecipeResponsive.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <section class="search-section">
+        <div class="section-heading">Search for a Recipe</div>
+        <div class="search-bar">
+            <input type="text" placeholder="Enter recipe name or description">
+            <div class="search-icon-wrapper"><i class="fa-solid fa-magnifying-glass fa-lg" style="color: #fff;"></i></div>
+        </div>
+
+        <div class="category-section">
+            <p class="section-title">RECIPE COLLECTIONS</p>
+            <div class="category-cards-wrapper">
+                <div class="category-card">
+                    <img src="./assets/Recipe-Hub-01.jpg" alt="Cake ’N’ Bake">
+                    <div>Cake ’N’ Bake</div>
+                </div>
+                <div class="category-card hidden-xs">
+                    <img src="./assets/Recipe-Hub-02.jpg" alt="Breakfast">
+                    <div>Breakfast</div>
+                </div>
+                <div class="category-card hidden-xs">
+                    <img src="./assets/Recipe-Hub-03.jpg" alt="Festive Special">
+                    <div>Festive Special</div>
+                </div>
+                <div class="category-card hidden-xs">
+                    <img src="./assets/Recipe-Hub-04.jpg" alt="Beverages">
+                    <div>Beverages</div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="main-section">
+        <div class="filter-section hidden-xs">
+           <div class="sort">Sort By</div> 
+            <select name="A - Z" id="">
+                <option value="A - Z" >A - Z</option>
+                <option value="Newest" >Newest</option>
+                <option value="Featured" >Featured</option>
+            </select>
+            <div class="filter-card">
+                <div class="flex line1">
+                    <span><img src="./assets/Filter_Icon.svg" alt=""> Filter by</span>
+                    <div class="mg-bt-15">101 RESULTS</div>
+                </div>
+                <div class="flex line1">
+                    <div>CATEGORY</div>
+                    <div><i class="fa-solid fa-plus fa-lg" style="color: #003594;"></i></div>
+                </div>
+                <div class="flex line1">
+                    <div>SKILL</div>
+                    <div><i class="fa-solid fa-plus fa-lg" style="color: #003594;"></i></div>
+                </div>
+            </div>
+        </div>
+        <div class="cards-section">
+            <div class="card-wrapper">
+                <div class="card">
+                    <div class="card-img">
+                        <img src="./assets/Almond Oats Pancakes-main.jpg" alt="Almond Oats Pancakes Recipe Hershey's India">
+                    </div>
+                    <div class="card-title">Almond Oats Pancakes Recipe Hershey's India</div>
+                </div>
+                <div class="card">
+                    <div class="card-img">
+                        <img src="./assets/Apple Pie Gujiya-main.jpg" alt="Apple Pie Gujiya-main.jpg">
+                    </div>
+                    <div class="card-title">Apple Pie Gujiya-main.jpg</div>
+                </div>
+                <div class="card">
+                    <div class="card-img">
+                        <img src="./assets/caramel-flavored-muffins-main.jpg" alt="caramel-flavored-muffins-main">
+                    </div>
+                    <div class="card-title">Caramel Flavored Muffins Recipe Hershey's India</div>
+                </div>
+                <div class="card">
+                    <div class="card-img">
+                        <img src="./assets/Carrot Halwa Cake-main-02.jpg" alt="Carrot Halwa Cake Recipe Hershey's India">
+                    </div>
+                    <div class="card-title">Carrot Halwa Cake Recipe Hershey's India</div>
+                </div>
+                <div class="card">
+                    <div class="card-img">
+                        <img src="./assets/Carrot-Cara Lollipop-main.jpg" alt="Carrot-Cara Lollipop Recipe Hershey's India">
+                    </div>
+                    <div class="card-title">Carrot-Cara Lollipop Recipe Hershey's India</div>
+                </div>
+                <div class="card">
+                    <div class="card-img">
+                        <img src="./assets/Chilli Choco-Oats Cookies-main.jpg" alt="Chilli Choco-Oats Cookies Recipe Hershey's India">
+                    </div>
+                    <div class="card-title">Chilli Choco-Oats Cookies Recipe Hershey's India</div>
+                </div>
+                <div class="card">
+                    <div class="card-img">
+                        <img src="./assets/chocolatey bun maska-main.jpg" alt="Choco Bun Maska Recipe Hershey's India">
+                    </div>
+                    <div class="card-title">Choco Bun Maska Recipe Hershey's India</div>
+                </div>
+                <div class="card">
+                    <div class="card-img">
+                        <img src="./assets/Choco Milk Jelly Bar-main.jpg" alt="Choco Milk Jelly Bar Recipe Hershey's India">
+                    </div>
+                    <div class="card-title">Choco Milk Jelly Bar Recipe Hershey's India</div>
+                </div>
+                <div class="card">
+                    <div class="card-img">
+                        <img src="./assets/Choco Whipped Cream Cake-main 02.jpg" alt="Choco Whipped Cream Cake Recipe Hershey's India">
+                    </div>
+                    <div class="card-title">Choco Whipped Cream Cake Recipe Hershey's India</div>
+                </div>
+                <div class="card">
+                    <div class="card-img">
+                        <img src="./assets/choco-coconut-karanji-main.jpg" alt="Choco-Coconut Karanji Recipe Hershey's India">
+                    </div>
+                    <div class="card-title">Choco-Coconut Karanji Recipe Hershey's India</div>
+                </div>
+                <div class="card">
+                    <div class="card-img">
+                        <img src="./assets/Choco-Fruit Millet Pizza-main.jpg" alt="Choco-Fruit Millet Pizza Recipe Hershey's India">
+                    </div>
+                    <div class="card-title">Choco-Fruit Millet Pizza Recipe Hershey's India</div>
+                </div>
+                <div class="card">
+                    <div class="card-img">
+                        <img src="./assets/Choco-Nut Kalakand-main.jpg" alt="Choco-nut Kalakand Recipe Hershey's India">
+                    </div>
+                    <div class="card-title">Choco-nut Kalakand Recipe Hershey's India</div>
+                </div>
+            </div>
+            <div class="card-button">
+                <button>Show More Recipes</button>
+            </div>
+        </div>
+    </section>
+    
+</body>
+</html>

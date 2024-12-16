@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36.2622 39.7622">
+  <g>
+    <line x1="36.2572" y1="6.5269" x2="19.5469" y2="6.5269" fill="none" stroke="#333" stroke-miterlimit="10" stroke-width="3.5"/>
+    <line x1="4.213" y1="6.5328" x2="0.0045" y2="6.5328" fill="none" stroke="#333" stroke-miterlimit="10" stroke-width="3.5"/>
+    <line x1="36.2622" y1="19.8811" x2="32.9984" y2="19.8811" fill="none" stroke="#333" stroke-miterlimit="10" stroke-width="3.5"/>
+    <line x1="18.3595" y1="19.8833" y2="19.8833" fill="none" stroke="#333" stroke-miterlimit="10" stroke-width="3.5"/>
+    <line x1="36.2572" y1="33.2249" x2="18.9992" y2="33.2249" fill="none" stroke="#333" stroke-miterlimit="10" stroke-width="3.5"/>
+    <line x1="3.2534" y1="33.2294" x2="0.0045" y2="33.2294" fill="none" stroke="#333" stroke-miterlimit="10" stroke-width="3.5"/>
+    <path d="M32.18,20.1333a4.7826,4.7826,0,1,1-4.7828-4.7827A4.7828,4.7828,0,0,1,32.18,20.1333Z" transform="translate(-1.4366 -0.25)" fill="none" stroke="#333" stroke-miterlimit="10" stroke-width="3.5"/>
+    <path d="M17.8222,6.7828A4.7824,4.7824,0,1,1,13.04,2,4.7828,4.7828,0,0,1,17.8222,6.7828Z" transform="translate(-1.4366 -0.25)" fill="none" stroke="#333" stroke-miterlimit="10" stroke-width="3.5"/>
+    <path d="M17.2281,33.4794a4.7823,4.7823,0,1,1-4.7823-4.7832A4.7827,4.7827,0,0,1,17.2281,33.4794Z" transform="translate(-1.4366 -0.25)" fill="none" stroke="#333" stroke-miterlimit="10" stroke-width="3.5"/>
+  </g>
+</svg>
