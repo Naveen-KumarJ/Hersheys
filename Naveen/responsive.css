@@ -101,6 +101,9 @@
     .hero{
         height: 50vh;
     }
+    .brands-container>.images-container{
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 
 /* Small Devices (Mobile) */
@@ -108,5 +111,13 @@
     *{
         font-size: 12px;
     }
-    
+    .brands-container>.images-container{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .images-container{
+        gap:20px;
+    }
+    .brands-container button{
+        width: 50%;
+    }
 }
