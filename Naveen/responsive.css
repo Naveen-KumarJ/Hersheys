@@ -1,0 +1,123 @@
+/* Extra Large Devices */
+@media only screen and (min-width:1200px){
+    nav>.toggle-menu{
+        display: none;
+    }
+}
+/* Laptop */
+@media only screen and (min-width: 991px) and (max-width: 1200px)  {
+    nav>.toggle-menu{
+        display: none;
+    }
+    .hero>.title{
+        font-size: 2.7rem;
+    }
+    .explore-section>.context{
+        font-size: .8rem;
+    }
+    .hero-product-tab>.each-product-tab{
+        width: 250px;
+    }
+}
+/* Tablet */
+@media only screen and (max-width:991px) {
+    header{
+        height: 60px;
+    }
+    nav{
+        /* align-items: center; */
+        padding: 0 8% 0 2%;
+    }
+    nav>.toggle-menu{
+        font-size: 30px;
+        font-weight: bold;
+        color: #023494;
+    }
+    .nav-left-part>.nav-menu{
+        display: none;
+    }
+    .nav-search-part{
+        width: 47px;
+    }
+    .nav-search-part>input{
+        display: none;
+    }
+    .nav-search-part>button{
+        background-color: transparent;
+    }
+    main{
+        margin-top: 60px;
+    }
+    .hero>.title{
+        font-size: 32px;
+        margin-bottom: 26px;
+    }
+    .hero>.hero-product-tab{
+        display: none;
+    }
+
+    .find-inspiration-tab{
+        display: flex;
+    }
+
+    .explore-section{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .explore-section>.context{
+        right: 0;
+        top: -25px;
+        width: 75%;
+    }
+    .explore-section>.banner{
+        width: 80%;
+        background-color: forestgreen;
+    }
+    .recipes-container{
+        width: 80vw;
+        gap: 20px;
+    }
+    .recipes-container>.recipes-images-container{
+        grid-template-columns: 1fr;
+        row-gap: 15px;
+    }
+    .recipes-images-container>.tab-2{
+        row-gap: 15px;
+    }
+    .recipes-images-container>.tab-2,.recipes-images-container>.tab-1{
+        width: 100%;
+    }
+    .recipes-container>button{
+        width: 100%;
+    }
+}
+
+/* Large Mobile Phones */
+@media only screen and (max-width:769px){
+    main{
+        background-color: yellow;
+    }
+    .hero{
+        height: 50vh;
+    }
+    .brands-container>.images-container{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Small Devices (Mobile) */
+@media only screen and (max-width:577px){
+    *{
+        font-size: 12px;
+    }
+    .brands-container>.images-container{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .images-container{
+        gap:20px;
+    }
+    .brands-container button{
+        width: 50%;
+    }
+}

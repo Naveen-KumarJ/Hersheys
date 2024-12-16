@@ -1,0 +1,49 @@
+* {
+    box-sizing: border-box;;
+    margin: 0;
+    padding: 0;
+}
+
+.image-container {
+    width: 100%; 
+    height: 500px; 
+    background-image: url('./assets/brand_banner.jpeg');
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-position: center; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.product {
+    background-color: #003594;
+}
+
+#product-container {
+    display:flex;
+    flex-wrap: wrap;
+    padding: 6%;
+    padding-left: 7%;
+    gap: 50px;
+    /* justify-content: center; */
+    align-items: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.items{
+    align-items:self-start;
+    overflow: hidden ;
+    transition: transform 0.3s ease-in-out;
+}
+
+h3 {
+    padding: 10px;
+    color: white;
+    text-decoration: underline;
+}
+
+.product img:hover {
+    transform: scale(1.1); 
+} 
+
