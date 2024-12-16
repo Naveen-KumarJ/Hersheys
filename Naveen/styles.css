@@ -8,6 +8,7 @@
 }
 body{
     width: 100vw;
+    height: 100vh;
     font-size: 17px;
     font-weight: 500;
     overflow-x: hidden;
@@ -180,7 +181,7 @@ nav{
 
                                                         /* Main Part CSS */
 main{
-    width: 100%;
+    width: 100vw;
     margin-top: 80px;
     background-color: green;
 }
@@ -256,9 +257,10 @@ main{
     width: 70%;
 }
 
+/* Inspiration Tab   */
 .find-inspiration-tab{
     height: 50px;
-    width: 100%;
+    width: 100vw;
     background-color: #4068AF;
     color: white;
     justify-content: center;
@@ -269,23 +271,27 @@ main{
     display: none;
 }
 .find-inspiration-tab>span{
+    font-size: 1rem;
     display: flex;
     align-items: center;
     gap: 10px;
 }
 .find-inspiration-tab>span>i{
-    font-size: 36px;
+    font-size: 2rem;
 }
 
+/* Explore section */
 .explore-section{
+    width: 100vw;
     display: flex;
     justify-content: center;
     align-items: center;
     margin-top: 80px;
     background-color: #3f000b;
-    padding: 90px 0px;
+    padding: 5% 0;
 }
 .explore-section>.context{
+    order: 2;
     background-color: rgb(176,0,96);
     display: flex;
     flex-direction: column;
@@ -300,6 +306,7 @@ main{
     padding: 0px 25px;
     text-align: center;
     color: white;
+    box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.6);
 }
 .explore-section>.context>h1{
     font-family: "Playfair Display"; 
@@ -317,10 +324,130 @@ main{
     font-size: 18px;
 }
 .explore-section>.banner{
+    overflow: hidden;
     width: 60%;
 }
 .explore-section>.banner>img{
     width: 100%;
+    transition: all 0.4s ease-in-out;
 }
 
+.explore-section>.context:hover +.banner>img{
+    transform: scale(1.2);
+}
+
+
+/* Recipies section */
+.recipes{
+    width: 100vw;
+    background-color: #B00060;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5% 0;
+}
+/* .tab-1{background-color: green;}
+.tab-2{background-color: green;} */
+.each-recipe{
+    background-color: white;
+    color: var(--primary-color);
+    box-shadow: 0 5px 5px -3px rgba(0, 0, 0, 0.2), 0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12);
+    border-radius: 5px;
+    transition: all 0.4s ease-in-out;
+}
+.each-recipe:hover{
+    transform: scale(1.1);
+}
+.each-recipe:hover .recipe-title>h4{
+    text-decoration: underline;
+}
+.recipes-container{
+    /* background-color: yellow; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+.recipes-container>h1{
+    text-align: center;
+    font-family: "Playfair Display";
+    color: white;
+    font-size: 2.4rem;
+    font-weight: 900;
+}
+.recipes-container>.recipes-images-container{
+    /* background-color: yellow; */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 60px;
+}
+.recipes-images-container>.tab-1,.tab-2{
+    width: 40vw;
+}
+.tab-1{
+    z-index: 10;
+}
+.tab-1>.each-recipe{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+.tab-1>.each-recipe>.banner{
+    /* background-color: #083B97; */
+    border-radius: 5px 5px 0 0;
+    height: 90%;
+    overflow: hidden;
+}
+.tab-1>.each-recipe>.banner>img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: scale(1.15);
+}
+.tab-1>.each-recipe>.recipe-title{
+    padding: 1% 2%;
+}
+
+
+.tab-2{
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    /* background-color: red; */
+}
+.tab-2>.each-recipe{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* flex: 1; */
+}
+.tab-2>.each-recipe>.banner{
+    border-radius: 5px 0 0 5px;
+    width: 40%;
+    background-color: #007BBD;
+    overflow: hidden;
+}
+.tab-2>.each-recipe>.banner>img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: scale(1.2);
+}
+.tab-2>.each-recipe>.recipe-title{
+    width: 60%;
+    padding-left: 10px;
+}
+
+.recipes-container>button{
+    background-color: #007BBD;
+    width: 30%;
+    height: 48px;
+    border: none;
+    border-radius: 22px;
+    font-weight: bold;
+    color: white;
+    font-size: 1rem;
+}
 /* font-family: "Playfair Display"; */

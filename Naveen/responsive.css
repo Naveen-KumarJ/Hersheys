@@ -15,6 +15,9 @@
     .explore-section>.context{
         font-size: .8rem;
     }
+    .hero-product-tab>.each-product-tab{
+        width: 250px;
+    }
 }
 /* Tablet */
 @media only screen and (max-width:991px) {
@@ -59,28 +62,51 @@
 
     .explore-section{
         flex-direction: column;
-        justify-content: center;
         align-items: center;
+        justify-content: center;
     }
     .explore-section>.context{
-        
+        right: 0;
+        top: -25px;
+        width: 75%;
+    }
+    .explore-section>.banner{
+        width: 80%;
+        background-color: forestgreen;
+    }
+    .recipes-container{
+        width: 80vw;
+        gap: 20px;
+    }
+    .recipes-container>.recipes-images-container{
+        grid-template-columns: 1fr;
+        row-gap: 15px;
+    }
+    .recipes-images-container>.tab-2{
+        row-gap: 15px;
+    }
+    .recipes-images-container>.tab-2,.recipes-images-container>.tab-1{
+        width: 100%;
+    }
+    .recipes-container>button{
+        width: 100%;
     }
 }
 
 /* Large Mobile Phones */
 @media only screen and (max-width:769px){
-    body{
+    main{
         background-color: yellow;
     }
     .hero{
         height: 50vh;
     }
-
 }
 
 /* Small Devices (Mobile) */
 @media only screen and (max-width:577px){
-    body{
-        background-color: green;
+    *{
+        font-size: 12px;
     }
+    
 }
