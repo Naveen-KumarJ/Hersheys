@@ -91,6 +91,23 @@
     .recipes-container>button{
         width: 100%;
     }
+
+
+    .trending-container{
+        gap: 20px
+    }
+    .trending-container>.trending-images-container{
+        flex-direction: column;
+    }
+    .trending-images-container>.image-banner{
+        width: 70%;
+    }
+    .trending-images-container>.image-banner:nth-child(2){
+        display: none;
+    }
+    .trending-container .swiper-tab{
+        display: flex;
+    }
 }
 
 /* Large Mobile Phones */
@@ -111,6 +128,9 @@
     *{
         font-size: 12px;
     }
+    nav i{
+        font-size: 28px;
+    }
     .brands-container>.images-container{
         grid-template-columns: repeat(1, 1fr);
     }
@@ -120,4 +140,6 @@
     .brands-container button{
         width: 50%;
     }
+        
+    
 }
