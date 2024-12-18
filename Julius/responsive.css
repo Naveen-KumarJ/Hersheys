@@ -12,7 +12,7 @@
         line-height: 35px;
       }
       .call-out-card {
-        /* flex-direction: column-reverse; */
+        flex-direction: column;
         font-size: 28px;
         text-align: center;
       }
@@ -27,4 +27,26 @@
       .card-subHeading {
         width: 100%;
       }
+      .year-text {
+        /* text-align: center; */
+        /* justify-content: center; */
+        position:static;
+        margin-bottom: 20px;
+      }
+
+      .trending-container{
+        gap: 20px
+    }
+    .trending-container>.trending-images-container{
+        flex-direction: column;
+    }
+    .trending-images-container>.image-banner{
+        width: 70%;
+    }
+    .trending-images-container>.image-banner:nth-child(2){
+        display: none;
+    }
+    .trending-container .swiper-tab{
+        display: flex;
+    }
 }
