@@ -1,0 +1,30 @@
+/* -------------EXPLORE PAGE------------- */
+
+@media only screen and (max-width: 820px) {
+    .celebrate-text {
+        padding: 0 15px;
+        font-size: 16px;
+        line-height: 25px;
+      }
+    
+      .celebrate-text h2 {
+        font-size: 28px;
+        line-height: 35px;
+      }
+      .call-out-card {
+        /* flex-direction: column-reverse; */
+        font-size: 28px;
+        text-align: center;
+      }
+      .card-content {
+        margin-left: 0px;
+        padding: 0 15px;
+        margin-bottom: 20px;
+      }
+      .card-heading {
+        font-size: 36px;
+      }
+      .card-subHeading {
+        width: 100%;
+      }
+}
