@@ -3,13 +3,16 @@
 * {
     padding: 0;
     margin: 0;
-    font-family: "Poppins", sans-serif;
-    background-color: #003594;
+    /* font-family: "Poppins", sans-serif; */
+    font-family: "Playfair", serif;
+    /* background-color: #003594; */
 }
 
 body {
     width: 100vw;
     height: 100vh;
+    background-color: #003594;
+    overflow-x: hidden;
 }
 
 .brand-banner img {
@@ -47,8 +50,8 @@ body {
 .category {
     text-decoration: underline;
     color: white;
-    font-size: 18px;
-    font-weight: bold;
+    font-size: 20px;
+    font-weight: 900;
     margin-top: 10px;
     line-height: 26px;
     letter-spacing: 1.5px;
@@ -60,4 +63,82 @@ body {
 
 .product-wrapper:hover .category {
     text-decoration: none;
+}
+
+/* -----Explore Section------- */
+
+.explore-section{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 80px;
+    background-color: white;
+    padding: 5% 0;
+}
+
+.explore-section>.context{
+    order: 2;
+    background-color: rgb(173, 34, 92);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 36px;
+    width: 30%;
+    height: 70vh;
+    position: relative;
+    right: 35px;
+    z-index: 10;
+    padding: 0px 25px;
+    text-align: center;
+    color: white;
+    box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.6);
+}
+
+.explore-section>.context>h1{
+    font-family: "Playfair Display"; 
+    background-color:  rgb(173, 34, 92);
+    font-weight: 900;
+    font-size: 2rem;
+}
+
+.explore-section>.context>p{
+    /* font-family: "Playfair Display";  */
+    background-color:  rgb(173, 34, 92);
+   
+}
+
+.explore-section>.context button{
+    cursor: pointer;
+    background-color: #007BBD;
+    width: 80%;
+    height: 44px;
+    border: none;
+    border-radius: 22px;
+    font-weight: bold;
+    color: white;
+    font-size: 18px;
+}
+
+.explore-section>.context button:hover {
+    background-color: #268fc7;
+}
+
+.explore-section>.context button a{
+    color: white;
+}
+
+.explore-section>.banner{
+    overflow: hidden;
+    width: 60%;
+}
+
+.explore-section>.banner>img{
+    width: 100%;
+    transition: all 0.4s ease-in-out;
+}
+
+.explore-section>.context:hover +.banner>img{
+    transform: scale(1.2);
 }
