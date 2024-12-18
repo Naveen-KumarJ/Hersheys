@@ -3,6 +3,7 @@
     nav>.toggle-menu{
         display: none;
     }
+    
 }
 /* Laptop */
 @media only screen and (min-width: 991px) and (max-width: 1200px)  {
@@ -15,8 +16,11 @@
     .explore-section>.context{
         font-size: .8rem;
     }
-    .hero-product-tab>.each-product-tab{
+    .hero-product-tab>a>.each-product-tab{
         width: 250px;
+    }
+    .details-contact-container>.contact button{
+        width: 100%;
     }
 }
 /* Tablet */
@@ -61,6 +65,7 @@
     }
 
     .explore-section{
+        margin-top: 50px;
         flex-direction: column;
         align-items: center;
         justify-content: center;
@@ -72,7 +77,6 @@
     }
     .explore-section>.banner{
         width: 80%;
-        background-color: forestgreen;
     }
     .recipes-container{
         width: 80vw;
@@ -108,18 +112,79 @@
     .trending-container .swiper-tab{
         display: flex;
     }
+
+
+    .details-contact-container{
+        flex-direction: column;
+    }
+    .details-contact-container>.details{
+        flex-direction: column;
+        gap: 20px;
+    }
+    .details-contact-container>.details>.logo img{
+        width: 80vw;
+    }
+    .details-contact-container>.contact button{
+        width: 100%;
+    }
+    .details-contact-container>.details>.context{
+        flex-direction: column;
+    }
+    .details-contact-container>.details>.context>.each-detail-context{
+        padding: 1% 0;
+        width: 80vw;
+        flex-direction: row;
+        gap: 8px;
+        border: none;
+        border-bottom: 1px solid #023494;
+    }
+    .footer-sticky{
+        display: none;
+    }
+    footer{
+        padding-bottom: 50px;
+    }
+    .find-inspiration-tab{
+        position: fixed;
+        bottom: 0;
+        z-index: 1000;
+    }
 }
 
 /* Large Mobile Phones */
 @media only screen and (max-width:769px){
-    main{
-        background-color: yellow;
-    }
     .hero{
         height: 50vh;
     }
     .brands-container>.images-container{
         grid-template-columns: repeat(2, 1fr);
+    }
+
+    .social-media-container>p{
+        display: none;
+    }
+    .social-media-container{
+        flex-direction: column;
+        padding: 12px 0 12px 0;
+        align-items: center;
+        gap: 20px;
+        justify-content: center;
+    }
+    .social-media-container>.social-media-icons a:nth-child(3){
+        border: none;
+    }
+    .social-media-container>.social-media-icons{
+        font-size: 24px;
+    }
+    .social-media-container .dash-line{
+        height: 2px;
+        width: 100%;
+        background-color: white;
+    }
+
+    .privay-policy-container{
+        flex-direction: column;
+        gap: 20px;
     }
 }
 
@@ -137,9 +202,19 @@
     .images-container{
         gap:20px;
     }
-    .brands-container button{
+    .brands-container>button{
         width: 50%;
     }
-        
-    
+    .social-media-container>.social-media-icons i{
+        font-size: 20px;
+    }
+
+    .privay-policy-container>.terms{
+        flex-direction: column;
+        align-items: center;
+    }
+    .privay-policy-container>.terms a{
+        text-decoration: none;
+        border: none;
+    }
 }
