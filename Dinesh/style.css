@@ -99,6 +99,7 @@
   font-size: 18px;
   font-weight: bold;
   text-transform: uppercase;
+  border: none;
 }
 
 .card-button button:hover {
@@ -107,6 +108,7 @@
 
 .card-img {
   flex: 1;
+  overflow: hidden;
 }
 
 .card-img img {
