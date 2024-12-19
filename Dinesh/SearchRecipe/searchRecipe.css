@@ -16,6 +16,7 @@ body {
   justify-content: center;
   gap: 20px;
   position: relative;
+  margin-top: 80px;
 }
 
 .section-heading {
@@ -37,8 +38,9 @@ body {
 
 .search-icon-wrapper {
   background-color: #007bbd;
-  width: fit-content;
-  padding: 10px;
+  width: 40px;
+  height: 40px;
+  padding: 8px 9px;
   border-radius: 100%;
   position: absolute;
   top: 50%;
@@ -200,4 +202,5 @@ body {
   border-radius: 30px;
   font-size: 18px;
   font-weight: bold;
+  border: none;
 }
