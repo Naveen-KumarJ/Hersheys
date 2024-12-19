@@ -1,0 +1,154 @@
+/* Extra Large Devices */
+@media only screen and (min-width:1200px){
+    nav>.toggle-menu{
+        display: none;
+    }
+    
+}
+/* Laptop */
+@media only screen and (min-width: 991px) and (max-width: 1200px)  {
+    nav>.toggle-menu{
+        display: none;
+    }
+}
+/* Tablet */
+@media only screen and (max-width:991px) {
+    header{
+        height: 60px;
+    }
+    nav{
+        /* align-items: center; */
+        padding: 0 8% 0 2%;
+    }
+    nav>.toggle-menu{
+        font-size: 30px;
+        font-weight: bold;
+        color: #023494;
+    }
+    .nav-left-part>.nav-menu{
+        display: none;
+    }
+    .nav-search-part{
+        width: 47px;
+    }
+    .nav-search-part>input{
+        display: none;
+    }
+    .nav-search-part>button{
+        background-color: transparent;
+    }
+    main{
+        margin-top: 60px;
+    }
+
+    .recipes-container{
+        width: 80vw;
+        gap: 20px;
+    }
+    .recipes-container>.recipes-images-container{
+        grid-template-columns: 1fr;
+        row-gap: 15px;
+    }
+    .recipes-images-container>.tab-2{
+        row-gap: 15px;
+    }
+    .recipes-images-container>.tab-2,.recipes-images-container>.tab-1{
+        width: 100%;
+    }
+    .recipes-container>button{
+        width: 100%;
+    }
+
+    .details-contact-container{
+        flex-direction: column;
+    }
+    .details-contact-container>.details{
+        flex-direction: column;
+        gap: 20px;
+    }
+    .details-contact-container>.details>.logo img{
+        width: 80vw;
+    }
+    .details-contact-container>.contact button{
+        width: 100%;
+    }
+    .details-contact-container>.details>.context{
+        flex-direction: column;
+    }
+    .details-contact-container>.details>.context>.each-detail-context{
+        padding: 1% 0;
+        width: 80vw;
+        flex-direction: row;
+        gap: 8px;
+        border: none;
+        border-bottom: 1px solid #023494;
+    }
+
+
+    footer{
+        padding-bottom: 50px;
+    }
+}
+
+/* Large Mobile Phones */
+@media only screen and (max-width:769px){
+    .title-banner-section .details{
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .ingredients-directions>.context-container{
+        flex-direction: column;
+    }
+    .recipes-card-container{
+        flex-direction: column;
+    }
+    .social-media-container>p{
+        display: none;
+    }
+    .social-media-container{
+        flex-direction: column;
+        padding: 12px 0 12px 0;
+        align-items: center;
+        gap: 20px;
+        justify-content: center;
+    }
+    .social-media-container>.social-media-icons a:nth-child(3){
+        border: none;
+    }
+    .social-media-container>.social-media-icons{
+        font-size: 24px;
+    }
+    .social-media-container .dash-line{
+        height: 2px;
+        width: 100%;
+        background-color: white;
+    }
+
+    .privay-policy-container{
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+
+/* Small Devices (Mobile) */
+@media only screen and (max-width:577px){
+    *{
+        font-size: 12px;
+    }
+    nav i{
+        font-size: 28px;
+    }
+    .social-media-container>.social-media-icons i{
+        font-size: 20px;
+    }
+
+    .privay-policy-container>.terms{
+        flex-direction: column;
+        align-items: center;
+    }
+    .privay-policy-container>.terms a{
+        text-decoration: none;
+        border: none;
+    }
+}
