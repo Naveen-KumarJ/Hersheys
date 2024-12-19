@@ -52,7 +52,7 @@ This project is licensed under the MIT License. Feel free to use and modify the 
 
 ## Contact
 For any questions or feedback, please reach out via:
-- **Email:** [your-email@example.com]
+- **Email:** [naveen.jayakumar02@gmail.com]
 - **Social Media:** [HERSHEY'S India Facebook](https://www.facebook.com/HersheysIndia), [Instagram](https://www.instagram.com/hersheysindia/), [YouTube](https://www.youtube.com/c/HersheysIndiaofficial)
 
 ---
