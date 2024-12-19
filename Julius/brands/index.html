@@ -4,14 +4,139 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="../../Naveen/styles.css">
     <link rel="stylesheet" href="./responsive.css">
+    <link rel="stylesheet" href="../../Naveen/responsive.css">
     <link rel="icon" href="./assets/Hersheys-icon.svg" type="image/svg" sizes="32x32">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&display=swap" rel="stylesheet">
+
+     <!-- Boxicons -->
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+
+     <!-- Remix icons -->
+     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet"/>
     <title>Meet Our Brands | HERSHEY'S India</title>
 </head>
 <body>
+
+    <header>
+        <nav>
+            <!-- toggle-Hamburger-icon -->
+            <div class="toggle-menu"><i class="ri-menu-2-line"></i></div>
+            <!-- Nav left part (Logo ,Nav menu) -->
+            <div class="nav-left-part">
+                <!-- logo -->
+                <div class="logo">
+                    <a href="#"><img src="./assets/hersheys-logo-color.webp" alt="Hershey's logo"></a>
+                </div>
+                <!-- nav menu -->
+                <div class="nav-menu">
+                    <ul>
+                        <li class="our-brand-list">
+                            <a href="#" class="our-brands">Our Brands <i class="ri-arrow-down-s-line"></i>
+                                <!-- hover tab to show items while hovering -->
+                                <div class="hover-tab our-brand-hover-tab">
+                                    <h5>Explore Our Brands</h5>
+                                    <i class="ri-arrow-right-s-line"></i>
+                                    <div class="brand-items">
+                                        <div class="item">
+                                            <img src="./assets/navigation-kisses.webp" alt="">
+                                            <h5>HERSHEY'S KISSES</h5>
+                                        </div>
+                                        <div class="item">
+                                            <img src="./assets/navigation-bars.webp" alt="">
+                                            <h5>HERSHEY'S BARS</h5>
+                                        </div>
+                                        <div class="item">
+                                            <img src="./assets/navigation-HED.webp" alt="">
+                                            <h5>HSY'S EXOTIC DARK</h5>
+                                        </div>
+                                        <div class="item">
+                                            <img src="./assets/navigation-syrup.webp" alt="">
+                                            <h5>HERSHEY'S SYRUP</h5>
+                                        </div>
+                                        <div class="item">
+                                            <img src="./assets/navigation-spreads.webp" alt="">
+                                            <h5>HERSHEY'S SPREADS</h5>
+                                        </div>
+                                        <div class="item">
+                                            <img src="./assets/navigation-hcc.webp" alt="">
+                                            <h5>HERSHEY'S COCOA</h5>
+                                        </div>
+                                        <div class="item">
+                                            <img src="./assets/navigation-milkshake.webp" alt="">
+                                            <h5>HERSHEY'S MILKSHAKE</h5>
+                                        </div>
+                                        <div class="item">
+                                            <img src="./assets/navigation-sofit_2023.jpg" alt="">
+                                            <h5>SOFIT</h5>
+                                        </div>
+                                        <div class="item">
+                                            <img src="./assets/navigation-JR.webp" alt="">
+                                            <h5>JOLLY RANCHER</h5>
+                                        </div>
+                                        <div class="item">
+                                            <img src="./assets/navigation-chocotubes.jpg" alt="">
+                                            <h5>CHOCOTUBES</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li><a href="#">Products</a></li>
+                        <li class="about-us-list">
+                            <a href="#" class="about-us">About Us <i class="ri-arrow-down-s-line"></i>
+                                <!-- hover tab to show items while hovering -->
+                                <div class="hover-tab about-us-hover-tab">
+                                    <h5>ABOUT US</h5>
+                                    <i class="ri-arrow-right-s-line"></i>
+                                    <div class="brand-items">
+                                        <div class="item">
+                                            <img src="./assets/navigation-history.webp" alt="">
+                                            <h5>ABOUT US</h5>
+                                        </div>
+                                        <div class="item">
+                                            <img src="./assets/navigation-core values.webp" alt="">
+                                            <h5>CORE VALUES</h5>
+                                        </div>
+                                        <div class="item">
+                                            <img src="./assets/navigation-csr.webp" alt="">
+                                            <h5>CSR</h5>
+                                        </div>
+                                        <div class="item">
+                                            <img src="./assets/about-us_noticias.png" alt="">
+                                            <h5>Careers</h5>
+                                        </div>
+                                        <div class="item">
+                                            <img src="./assets/about-us_contactanos.webp" alt="">
+                                            <h5>Contact Us</h5>
+                                        </div>
+                                        <div class="item">
+                                            <img src="./assets/CR-Questions2.jpg" alt="">
+                                            <h5>Our Policies</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li><a href="#">Recipes</a></li>
+                        <li><a href="#">Blogs</a></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Nav Search part (input, search btn) -->
+            <div class="nav-search-part">
+                <!-- input -->
+                <input type="text" placeholder="Search favourites products and recipes"/>
+                <!-- search btn -->
+                <button><i class="ri-search-line"></i></button>
+            </div>
+        </nav>
+    </header>
+
+
     <section class="brand-banner">
         <img src="./assets/brand_banner.jpeg" alt="brand banner">
     </section>
@@ -92,7 +217,7 @@
     </section>
 
     <section class="explore-section">
-        <!-- Context -->
+    
         <div class="context">
             <h1>Something for Everyone</h1>
             <p>HERSHEY was founded on the
@@ -103,11 +228,59 @@
                 that foundation every day.</p>
             <button><a>EXPLORE</a></button>
         </div>
-        <!-- Banner with Mom and Son -->
+
         <div class="banner">
             <img src="./assets/explore-card.jpg" alt="Home page banner Mom and Son">
         </div>
     </section>
+
+    <footer>
+        <div class="social-media-container">
+            <p>KEEP YOURSELF UPDATED BY FOLLOWING US</p>
+            <div class="social-media-icons">
+                <a href=""><i class="ri-facebook-fill"></i></a>
+                <a href=""><i class="ri-instagram-fill"></i></a>
+                <a href=""><i class="ri-youtube-fill"></i></a>
+            </div>
+            <div class="dash-line"></div>
+        </div>
+        <div class="details-contact-container">
+            <div class="details">
+                <div class="logo">
+                    <a href=""><img src="./assets/hersheys-logo-color.webp" alt=""></a>
+                </div>
+                <div class="context">
+                    <div class="each-detail-context">
+                        <img src="./assets/footer_our-brands_icon-PNG8.webp" alt="">
+                        <a href=""><h4>Brands</h4></a>
+                    </div>
+                    <div class="each-detail-context">
+                        <img src="./assets/footer_products_icon-png.webp" alt="">
+                        <a href=""><h4>Products</h4></a>
+                    </div>
+                    <div class="each-detail-context">
+                        <img src="./assets/footer_recipes_icon-22.26-png8.webp" alt="">
+                        <a href=""><h4>Recipes</h4></a>
+                    </div>
+                </div>
+            </div>
+            <div class="contact">
+                <p>QUESTIONS FOR US?</p>
+                <button><a href="">CONTACT CUSTOMER SERVICE</a></button>
+            </div>
+        </div>
+        <div class="privay-policy-container">
+            <div class="switch-contrast">
+                <i class="ri-toggle-line"></i>
+                <p>HIGH CONTRAST <span>OFF</span></p>
+            </div>
+            <div class="terms">
+                <a href="">PRIVACY POLICY</a>
+                <a href="">TERMS AND CONDITIONS</a>
+                <a href="">DISCLAMER</a>
+            </div>
+        </div>
+    </footer>
 
 </body>
 </html>

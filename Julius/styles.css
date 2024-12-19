@@ -12,6 +12,183 @@ body {
 }
 
 
+header{
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: white;
+  width: 100vw;
+  height: 80px;
+  z-index: 1000;
+}
+/* =Nav part CSS=*/
+nav{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2%;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 0px 7.52px 0.48px;
+}
+  /* ==Nav left part CSS== */
+.nav-left-part{
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.nav-left-part>.logo>a>img{
+  width: 160px;
+  height: 46px;
+}
+.nav-menu>ul{
+  display: flex;
+}
+.nav-menu>ul>li{
+  padding: 27px;
+  position: relative;
+}
+.nav-menu>ul>li>a{
+  color: var(--primary-color);
+  font-size: 1rem;
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+  transition: all 0.2s;
+  white-space: nowrap;
+}
+.nav-menu>ul>li>a::before{
+  content: "";
+  background: url(./assets/Hersheys-icon.svg) no-repeat center;
+  background-size: contain;
+  width: 14px;
+  height: 14px;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%,-50%); 
+  margin-right: 2px;
+  display: none; 
+}
+.nav-menu>ul>li>a:hover::before{
+  display: inline-block;
+}
+.nav-menu>ul>li>a:hover{
+  font-weight: 600;
+}
+
+.nav-menu>ul>li>a:hover i{
+  transform: rotate(180deg);
+}
+.nav-menu>ul>li>a>i{
+  position: relative;
+  top: 1px;
+  font-size: 24px;
+  font-weight: 500;
+}
+  /* ==nav right part CSS== */
+.nav-search-part{
+  width: 32%;
+  height: 44px;
+  display: flex;
+  align-items: center;
+}
+
+.nav-search-part>input{
+  width: 100%;
+  height: 100%;
+  padding: 0 10px 0 20px;
+  border: none;
+  outline: none;
+  border-radius: 20px 0 0 20px;
+  font-size: 12px;
+  background-color: #F5F5F5;
+}
+.nav-search-part>button{
+  height: 100%;
+  width: 47px;
+  font-size: 20px;
+  font-weight: bolder;
+  border: none;
+  border-radius: 0 20px 20px 0;
+  background-color: #F5F5F5;
+  color: #083B97;
+  cursor: pointer;
+}
+
+/* ==Nav left part CSS== |This is for Nav left part nav menu CSS -> Hover Tab effect| */
+.hover-tab{
+  color: var(--primary-color);
+  width: 530px;
+  padding: 25px;
+  border-radius: 8px;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 7.52px 0.48px;
+  z-index: 1000;
+  background-color: white;
+}
+.hover-tab>h5{
+  display: inline-block;
+  text-decoration: underline;
+  text-decoration-thickness: 1.5px;
+}
+.hover-tab>h5:hover +i{
+  display: inline-block;
+  animation: arrow_movement 1s linear infinite;
+}
+@keyframes arrow_movement {
+  0%{
+      transform: none;
+  }
+  50%{
+      transform: translateX(3px);
+  }
+  100%{
+      transform: translateX(0px);
+  }
+
+}
+.hover-tab>.brand-items{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  margin-top: 20px;
+}
+.hover-tab>.brand-items>.item{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  overflow: hidden;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 0px 7.52px 0.48px;
+  
+}
+.hover-tab>.brand-items>.item>img{
+  width: 42px;
+  height: auto;
+  object-fit: cover;
+  transition: all 0.2s ease-in-out;
+}
+.hover-tab>.brand-items>.item>h5{
+  padding: 10px 0;
+}
+.hover-tab>.brand-items>.item:hover img{
+  transform: scale(1.2);
+}
+
+.our-brand-hover-tab,.about-us-hover-tab{
+  position: absolute;
+  top: 90%;
+  left: 30px;
+  display: none;
+}
+.nav-menu>ul>li>.our-brands:hover .our-brand-hover-tab, .our-brand-list:hover .our-brand-hover-tab{
+  display: block;
+}
+.nav-menu>ul>li>.about-us:hover .abour-us-hover-tab, .about-us-list:hover .about-us-hover-tab{
+  display: block;
+}
+
+
+
 .brand-banner img {
     width: 100%;
 }
@@ -200,4 +377,145 @@ body {
     background-color: white;
     color: #003594;
     font-size: 24px;
+}
+
+
+/* Footer */
+.social-media-container{
+  background-color: #B00060;
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  padding: 12px 0 12px 160px;
+  border-top: 1px solid white;
+}
+.social-media-container>p{
+  font-size: 14px;
+  color: white;
+  font-weight: 400;
+}
+.social-media-icons{
+  display: flex;
+  align-items: center;
+  font-size:20px;
+}
+.social-media-icons a{
+  color: #007BBD;
+  padding: 0 20px;
+  border-right: 1px solid white;
+}
+.social-media-icons a:hover{
+  color: #2f8abc;
+}
+
+
+
+.details-contact-container{
+  display: flex;
+}
+.details-contact-container>.details{
+  flex: 4;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 20px;
+}
+.details-contact-container>.details>.logo img{
+  width: 230px;
+}
+.details-contact-container>.details>.context{
+  display: flex;
+  justify-content: space-around;
+}
+.details-contact-container>.details>.context>.each-detail-context{
+  padding: 0 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+  border-right: 1px solid #003594;
+}
+.details-contact-container>.details>.context>.each-detail-context a{
+  color: #007BBD;
+  text-decoration: underline;
+}
+.details-contact-container>.details>.context>.each-detail-context a:hover{
+  text-decoration: none;
+  color: #3f000b;
+}
+.details-contact-container>.details>.context>.each-detail-context:nth-child(3){
+  border-right: none;
+}
+.details-contact-container>.contact{
+  padding: 20px;
+  flex: 3;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  background-color: #F6F6F6;
+}
+.details-contact-container>.contact p{
+  font-size: 12px;
+  letter-spacing: 1px;
+}
+
+.details-contact-container>.contact button{
+  cursor: pointer;
+  width: 60%;
+  padding: 10px 0;
+  border: none;
+  outline: none;
+  border-radius: 30px;
+  font-weight: 700;
+  font-size: 0.9rem;
+  color: white;
+  background-color: #007BBD;
+}
+.details-contact-container>.contact button:hover{
+  background-color: #2f8abc;
+}
+.details-contact-container>.contact button a{
+  color: white;
+}
+
+
+.privay-policy-container{
+  background-color: #3f000b;
+  color: white;
+  font-size: 12px;
+  padding: 1% 7% 2% 10%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 400;
+}
+.privay-policy-container>.switch-contrast{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.privay-policy-container>.switch-contrast i{
+  font-size: 2rem;
+}
+.privay-policy-container>.switch-contrast p span{
+  text-decoration: underline;
+  font-weight: 700;
+}
+.privay-policy-container>.terms{
+  display: flex;
+}
+.privay-policy-container>.terms a{
+  color: white;
+  padding: 2px 10px;
+  border-right: 1px solid white;
+  text-decoration: underline;
+}
+.privay-policy-container>.terms a:hover{
+  text-decoration: none;
+}
+.privay-policy-container>.terms a:nth-child(3){
+  border: none;
 }
