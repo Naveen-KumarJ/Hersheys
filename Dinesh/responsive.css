@@ -2,6 +2,7 @@
   .banner {
     height: unset;
     padding-bottom: 40%;
+    margin-top: 60px;
   }
 
   .banner .heading {
@@ -54,6 +55,7 @@
   }
   .recipe-banner {
     position: relative;
+    margin-top: 60px;
   }
   .recipe-banner::after {
     z-index: 0;

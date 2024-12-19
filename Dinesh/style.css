@@ -11,6 +11,7 @@
   background-position: center;
   background-size: cover;
   position: relative;
+  margin-top: 80px;
 }
 
 .banner .heading {
@@ -128,6 +129,10 @@
 }
 
 /*------------------------------------------ Recipe Section Starts --------------------------- */
+
+.recipe-banner{
+  margin-top: 80px;
+}
 
 .recipe-banner img {
   max-width: 100%;
